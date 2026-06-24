@@ -12,7 +12,7 @@ Window {
     property color clrFona: "#000000" // чёрный в hex, чтобы без неоднозначностей
     property int ntWidth: 2
     property int ntCoff: 8
-    property int ntRazmer: 96
+    property int ntRazmer: 38
 
     DCButtons.DCKnopkaInfo {
         id: knopkaInfo
