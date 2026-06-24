@@ -12,7 +12,7 @@ Window {
     property color clrFona: "#000000" // чёрный в hex, чтобы без неоднозначностей
     property int ntWidth: 2
     property int ntCoff: 8
-    property int ntRazmer: 8
+    property int ntRazmer: 96
 
     DCButtons.DCKnopkaInfo {
         id: knopkaInfo
@@ -173,6 +173,26 @@ Window {
         enabled: false
         blKrug: false
     }
+    DCButtons.DCKnopkaVidelit{
+        id: knopkaVidelit_1
+        anchors.centerIn: parent
+        ntWidth: root.ntWidth
+        ntCoff: root.ntCoff
+        clrKnopki: root.clrKnopki
+        clrFona: root.clrFona
+        enabled: true
+        isVidelit: true
+    }
+    DCButtons.DCKnopkaVidelit{
+        id: knopkaVidelit_2
+        anchors.centerIn: parent
+        ntWidth: root.ntWidth
+        ntCoff: root.ntCoff
+        clrKnopki: root.clrKnopki
+        clrFona: root.clrFona
+        enabled: true
+        isVidelit: false
+    }
     DCButtons.DCKnopkaVniz{
         id: knopkaVniz
         anchors.centerIn: parent
@@ -260,6 +280,12 @@ Window {
         }, Qt.size(root.ntRazmer, root.ntRazmer))
         knopkaSozdat_2.grabToImage(function(result) {
             result.saveToFile("DCKnopkaSozdat_2.png")
+        }, Qt.size(root.ntRazmer, root.ntRazmer))
+        knopkaVidelit_1.grabToImage(function(result) {
+            result.saveToFile("DCKnopkaVidelit_1.png")
+        }, Qt.size(root.ntRazmer, root.ntRazmer))
+        knopkaVidelit_2.grabToImage(function(result) {
+            result.saveToFile("DCKnopkaVidelit_2.png")
         }, Qt.size(root.ntRazmer, root.ntRazmer))
         knopkaVniz.grabToImage(function(result) {
             result.saveToFile("DCKnopkaVniz.png")

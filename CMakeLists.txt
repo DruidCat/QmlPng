@@ -14,6 +14,9 @@ qt_add_qml_module(appQmlPng
 	VERSION 1.0
 	QML_FILES
 		Main.qml
+		QML_FILES
+		QML_FILES
+		QML_FILES
 )
 
 # Вшиваем папку DCButtons в ресурсы qrc:/DCButtons
@@ -35,6 +38,7 @@ qt_add_resources(appQmlPng dcbuttons_res
 		DCButtons/DCKnopkaPovorotProtiv.qml
 		DCButtons/DCKnopkaSidebar.qml
 		DCButtons/DCKnopkaSozdat.qml
+		DCButtons/DCKnopkaVidelit.qml
 		DCButtons/DCKnopkaVniz.qml
 		DCButtons/DCKnopkaVpered.qml
 		DCButtons/DCKnopkaVverh.qml
